@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="h-screen bg-gradient-to-r from-purple-500 to-pink-500">
+    <div class="h-screen grid place-content-center">
+        <div class="grid place-content-center">
+            <p class="text-l font-sans subpixel-antialiased font-semibold cursor-not-allowed text-center">Hello there,
+                <br> Try this calculator!
+            </p>
+        </div>
+        <div class="h-60 w-60 bg-white rounded-lg opacity-75 drop-shadow-md hover:drop-shadow-xl grid place-content-center">
+            <div class="grid place-content-center">
+                <div>
+                    <p class="text-center font-sans subpixel-antialiased">Drop your equation here</p>
+                </div>
+                <div class="grid grid-cols-2">
+                    <div class="grid place-content-center">
+                        <form>
+                            <label for="1stnum">
+                                <p class="font-sans text-sm opacity-50">First Number:</p>
+                            </label>
+                            <input type="number" id="FN" class="border-solid border-2 border-light-blue-500 backdrop-grayscale-0h-20 w-20  bg-white/30 rounded-lg">
+                        </form>
+                    </div>
+
+                    <div class="grid place-content-center">
+                        <form>
+                            <label for="2ndnum">
+                                <p class="font-sans text-sm opacity-50"> Second Number:</p>
+                            </label>
+                            <input type="number" id="SN" class="w-20 border-solid border-2 border-light-blue-500 backdrop-grayscale-0 bg-white/30 rounded-lg">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="grid place-content-center gap-4 grid-cols-2 m-5">
+                <div class="grid place-content-center"><button onclick="add()" class="rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 w-10">
+                        <p class="font-semibold">+</p>
+                    </button></div>
+                <div class="grid place-content-center"><button onclick="subtrack()" class="rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 w-10">
+                        <p class="font-semibold">-</p>
+                    </button></div>
+                <div class="grid place-content-center"><button onclick="multi()" class="rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 w-10">
+                        <p class="font-semibold">*</p>
+                    </button></div>
+                <div class="grid place-content-center"><button onclick="divi()" class="rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 w-10">
+                        <p class="font-semibold">/</p>
+                    </button></div>
+            </div>
+            <div class="grid place-content-center">
+                <p class="text-base font-sans subpixel-antialiased text-center">Result: <span id="answer" class=" font-semibold">-</span>
+                </p>
+            </div>
+        </div>
+        <div class="h-10 w-60 mt-2 bg-white rounded-lg opacity-75 drop-shadow-md hover:drop-shadow-xl grid place-content-center">
+            <p class="text-center font-sans subpixel-antialiased"> Find out more featuers <a href="taxcounter.html"><span class="font-semibold underline hover:underline-offset-4">here</span></a></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
